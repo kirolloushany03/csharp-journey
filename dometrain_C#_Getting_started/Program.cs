@@ -9,3 +9,9 @@
 //string name = Console.ReadLine();
 
 //Console.WriteLine("Hello How are your " + name);
+
+
+
+int num1 = Console.Read();
+
+Console.WriteLine($"{num1}+10 = {5+10}");
