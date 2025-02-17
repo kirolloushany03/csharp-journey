@@ -31,22 +31,54 @@ Console.WriteLine($"{num1}+10 = {5+10}");*/
 //Console.WriteLine($"5.5 * 5.10 = {5.5d * 5.10}");
 //Console.WriteLine($"5.5 / 5.10 = {5.5 / 5.10d}");
 
-//the only to be true is both sides to be true
-Console.WriteLine($"true && false = {true && false}");
-Console.WriteLine($"true && true = {true && true}");
-Console.WriteLine($"false && false = {false && false}");
+////the only to be true is both sides to be true
+//Console.WriteLine($"true && false = {true && false}");
+//Console.WriteLine($"true && true = {true && true}");
+//Console.WriteLine($"false && false = {false && false}");
 
-Console.WriteLine("====================================");
+//Console.WriteLine("====================================");
 
-//if there is true so the answer willl be true
-Console.WriteLine($"true || false = {true || false}");
-Console.WriteLine($"true || true = {true || true}");
-Console.WriteLine($"false || false = {false || false}");
+////if there is true so the answer willl be true
+//Console.WriteLine($"true || false = {true || false}");
+//Console.WriteLine($"true || true = {true || true}");
+//Console.WriteLine($"false || false = {false || false}");
 
-//using not operator !
-bool nottrue = !true;
-bool notfalse = !false;
-Console.WriteLine("====================================");
+////using not operator !
+//bool nottrue = !true;
+//bool notfalse = !false;
+//Console.WriteLine("====================================");
 
-Console.WriteLine($"notTrue  = {nottrue}");
-Console.WriteLine($"notfalse = {notfalse}");
+//Console.WriteLine($"notTrue  = {nottrue}");
+//Console.WriteLine($"notfalse = {notfalse}");
+
+
+//another value type DateTime
+//so we have 3 types DateTime | DateOnly | TimeOnly
+
+// we can declare a DateTime variable
+DateTime myDateTime;
+
+// we can declare a DateOnly variable
+DateOnly myDate;
+
+// we can declare a TimeOnly variable
+TimeOnly myTime;
+
+// We can assign a value to these variables
+myDateTime = DateTime.Now;
+myDate = new DateOnly(2024, 1, 23); // why we make new this because dateonly is struct
+                                    // so we make instance from it
+                                    // so we create 
+myTime = new TimeOnly(1, 23, 45);
+
+// We can declare and assign in one line
+DateTime myDateTime2 = DateTime.Now;
+DateOnly myDate2 = new DateOnly(2024, 1, 23);  //yyyy/mm/day
+TimeOnly myTime2 = new TimeOnly(1, 23, 45); //h/min/sec
+
+
+DateTime dattimeffromcombination = new DateTime(myDate, myTime);
+
+Console.WriteLine(myDateTime);
+Console.WriteLine(DateTime.Now);
+Console.WriteLine(dattimeffromcombination);
