@@ -55,30 +55,48 @@ Console.WriteLine($"{num1}+10 = {5+10}");*/
 //another value type DateTime
 //so we have 3 types DateTime | DateOnly | TimeOnly
 
-// we can declare a DateTime variable
-DateTime myDateTime;
+//// we can declare a DateTime variable
+//DateTime myDateTime;
 
-// we can declare a DateOnly variable
-DateOnly myDate;
+//// we can declare a DateOnly variable
+//DateOnly myDate;
 
-// we can declare a TimeOnly variable
-TimeOnly myTime;
+//// we can declare a TimeOnly variable
+//TimeOnly myTime;
 
-// We can assign a value to these variables
-myDateTime = DateTime.Now;
-myDate = new DateOnly(2024, 1, 23); // why we make new this because dateonly is struct
-                                    // so we make instance from it
-                                    // so we create 
-myTime = new TimeOnly(1, 23, 45);
+//// We can assign a value to these variables
+//myDateTime = DateTime.Now;
+//myDate = new DateOnly(2024, 1, 23); // why we make new this because dateonly is struct
+//                                    // so we make instance from it
+//                                    // so we create 
+//myTime = new TimeOnly(1, 23, 45);
 
-// We can declare and assign in one line
-DateTime myDateTime2 = DateTime.Now;
-DateOnly myDate2 = new DateOnly(2024, 1, 23);  //yyyy/mm/day
-TimeOnly myTime2 = new TimeOnly(1, 23, 45); //h/min/sec
+//// We can declare and assign in one line
+//DateTime myDateTime2 = DateTime.Now;
+//DateOnly myDate2 = new DateOnly(2024, 1, 23);  //yyyy/mm/day
+//TimeOnly myTime2 = new TimeOnly(1, 23, 45); //h/min/sec
 
 
-DateTime dattimeffromcombination = new DateTime(myDate, myTime);
+//DateTime dattimeffromcombination = new DateTime(myDate, myTime);
 
-Console.WriteLine(myDateTime);
-Console.WriteLine(DateTime.Now);
-Console.WriteLine(dattimeffromcombination);
+//Console.WriteLine(myDateTime);
+//Console.WriteLine(DateTime.Now);
+//Console.WriteLine(dattimeffromcombination);
+
+
+//implicit converstion and this happen automtically where there is not data loss
+
+//explicit conversion
+//from string to double 
+string me = "5.5";
+
+double myint = double.Parse(me);
+Console.WriteLine($"so the answer will be {myint} and the type {myint.GetType()}");
+
+Console.WriteLine("=================================");
+//covert from double to string
+double mydouble = 5.5;
+
+string k = mydouble.ToString();
+Console.WriteLine($"so the answer will be {k} and the type {k.GetType()}");
+
