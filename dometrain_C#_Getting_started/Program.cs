@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
-
+Console.WriteLine("Hello, World!");
+//using System;
 //[1]
 //simple program to greet user
 //Console.WriteLine("what is your name?");
@@ -88,15 +88,20 @@ Console.WriteLine($"{num1}+10 = {5+10}");*/
 
 //explicit conversion
 //from string to double 
-string me = "5.5";
+//using dometrain_C__Getting_started;
 
-double myint = double.Parse(me);
-Console.WriteLine($"so the answer will be {myint} and the type {myint.GetType()}");
+//string me = "5.5";
 
-Console.WriteLine("=================================");
-//covert from double to string
-double mydouble = 5.5;
+//double myint = double.Parse(me);
+//Console.WriteLine($"so the answer will be {myint} and the type {myint.GetType()}");
 
-string k = mydouble.ToString();
-Console.WriteLine($"so the answer will be {k} and the type {k.GetType()}");
+//Console.WriteLine("=================================");
+////covert from double to string
+//double mydouble = 5.5;
+
+//string k = mydouble.ToString();
+//Console.WriteLine($"so the answer will be {k} and the type {k.GetType()}");
+
+//Console.WriteLine("hi");
+
 
