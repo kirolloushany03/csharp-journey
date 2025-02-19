@@ -38,65 +38,65 @@
 // learning the switch (statement, experession)in C# 
 // what is your day ?
 
-Console.WriteLine("enter number from 1 to 7 to get your day name?");
-int number = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("enter number from 1 to 7 to get your day name?");
+//int number = Convert.ToInt32(Console.ReadLine());
 
-//switch statements
-switch (number)
-{
+////switch statements
+//switch (number)
+//{
 
-    case 2:
-    case 1:
-        Console.WriteLine("sunday");
-        break;
+//    case 2:
+//    case 1:
+//        Console.WriteLine("sunday");
+//        break;
     
-        //Console.WriteLine("monday");
-        //break;
-    case 3:
-        Console.WriteLine("tuesday");
-        return; //return ends execution of the program ('return' exits the entire method.) 
-                // Unlike 'break', which exits only the switch case
-    case 4:
-        Console.WriteLine("wednesday");
-        break;
-    case 5:
-        Console.WriteLine("thursday");
-        break;
-    case 6:
-        Console.WriteLine("friday");
-        break;
-    case 7:
-        Console.WriteLine("saturday");
-        break;
-    //default:
-    //    Console.WriteLine("wrong number you have to choose 1 -> 7");
-    //    break;
-}
+//        //Console.WriteLine("monday");
+//        //break;
+//    case 3:
+//        Console.WriteLine("tuesday");
+//        return; //return ends execution of the program ('return' exits the entire method.) 
+//                // Unlike 'break', which exits only the switch case
+//    case 4:
+//        Console.WriteLine("wednesday");
+//        break;
+//    case 5:
+//        Console.WriteLine("thursday");
+//        break;
+//    case 6:
+//        Console.WriteLine("friday");
+//        break;
+//    case 7:
+//        Console.WriteLine("saturday");
+//        break;
+//    //default:
+//    //    Console.WriteLine("wrong number you have to choose 1 -> 7");
+//    //    break;
+//}
 
-//or make the defult out of the thing here
-Console.WriteLine("wrong number you have to choose 1 -> 7");
+////or make the defult out of the thing here
+//Console.WriteLine("wrong number you have to choose 1 -> 7");
 
 
-//swithch experession (like ternary experession)
+////swithch experession (like ternary experession)
 
-Console.WriteLine("enter the day name to know what is it");
+//Console.WriteLine("enter the day name to know what is it");
 
-string dayofweekname = Console.ReadLine().ToLower(); //here was a problme if the user entered Monday or monday
-                                                     //also we can use .ToUpper but you have to put all of the options uppercases                                              
-                                                     //(howa mal sayb) or also we can use .ToLower 
+//string dayofweekname = Console.ReadLine().ToLower(); //here was a problme if the user entered Monday or monday
+//                                                     //also we can use .ToUpper but you have to put all of the options uppercases                                              
+//                                                     //(howa mal sayb) or also we can use .ToLower 
 
-string result = dayofweekname switch
-{
-    ("monday")=> "first day of the week",
-    _=> "invalid"  //default in the switch experession
-};
+//string result = dayofweekname switch
+//{
+//    ("monday")=> "first day of the week",
+//    _=> "invalid"  //default in the switch experession
+//};
 
-Console.WriteLine(result);
+//Console.WriteLine(result);
 
-//when to use statments or experessions you can use both
-//but experession as it like more  cleaner and more maintainable code (readable and smaller in code will be better) 
+////when to use statments or experessions you can use both
+////but experession as it like more  cleaner and more maintainable code (readable and smaller in code will be better) 
 
-//we can use switches in for example in the exception middlware  like in send responsed status code
-//or in Http methods 
+////we can use switches in for example in the exception middlware  like in send responsed status code
+////or in Http methods 
 
 
