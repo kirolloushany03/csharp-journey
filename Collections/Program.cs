@@ -15,9 +15,16 @@ class Program
 {
     static void Main()
     {
-        Lists lists = new Lists(); //creating an instance 
-        lists.Runcode(); // then will call the method inside Arrys.cs
+        //Lists lists = new Lists(); //creating an instance 
+        //lists.Runcode(); // then will call the method inside Arrys.cs
+
+        //for running the dictionanry exmaple code
+        Dict dict = new Dict();  
+        dict.RunDic();
+        
     }
 }
+
+
 
 
