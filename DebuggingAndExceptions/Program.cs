@@ -45,3 +45,21 @@ catch (Exception e)
 Console.WriteLine("===================================(👆☝️👆 catch with specific types of exceptions)");
 
 
+//also we can use exception filters  to catch exceptions meet certain conditions
+try
+{
+    int result = IntDivision(10, 0);
+
+}
+catch (Exception e) when (e.Message.Contains("divide by zero"))
+{
+    Console.WriteLine("cant divide by zero");
+}
+catch (Exception e)
+{
+    Console.WriteLine("an exception was thrown!");
+    Console.WriteLine($"message of exception => {e.Message}");
+}
+
+Console.WriteLine("===================================(👆☝️👆 catch by filtering the catch message by contains)");
+
