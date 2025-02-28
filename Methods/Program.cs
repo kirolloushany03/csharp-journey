@@ -13,3 +13,16 @@ void sperateline()
 sperateline();
 Console.WriteLine("ksksksk");*/
 
+//methods with arguments
+
+void printHeader(string name)
+{
+    sperateline();
+    Console.WriteLine($"Hello {name}");
+    sperateline();
+}
+
+printHeader("Kiro");
+printHeader("may");
+printHeader("c#");
+printHeader("setup");
