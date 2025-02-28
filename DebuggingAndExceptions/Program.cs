@@ -63,3 +63,21 @@ catch (Exception e)
 
 Console.WriteLine("===================================(👆☝️👆 catch by filtering the catch message by contains)");
 
+
+//adding finally block 
+try
+{
+    int result = IntDivision(10, 0);
+
+}
+catch (Exception e)
+{
+    Console.WriteLine("an exception was thrown!");
+    Console.WriteLine($"message of exception => {e.Message}");
+}
+finally
+{
+    Console.WriteLine("and this the end of the debugging and exceptions session for example 😂");
+}
+
+Console.WriteLine("===================================(👆☝️👆 adding finally)");
