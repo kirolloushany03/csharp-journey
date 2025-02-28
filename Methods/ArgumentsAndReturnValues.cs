@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Methods
 {
-    internal sealed class ArgumentsAndReturnValues
+    class ArgumentsAndReturnValues
     {
-        public void Run()
+        public static void Run()
         {
 
             //methods with  arguments and return value

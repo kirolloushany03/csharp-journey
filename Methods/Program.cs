@@ -4,6 +4,8 @@
 //void means that the method has no return type
 
 using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
+using Methods;
 
 void sperateline()
 {
@@ -30,7 +32,8 @@ printHeader("c#");
 printHeader("setup");*/
 
 
-
+Console.WriteLine("this what inside the arguments and return values file");
+ArgumentsAndReturnValues.Run();
 
 
 
