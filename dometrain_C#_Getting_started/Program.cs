@@ -106,4 +106,9 @@ Console.WriteLine($"{num1}+10 = {5+10}");*/
 
 //Console.WriteLine("hi");
 
-Strings.RunMain();
+
+//Just uncomment the line you want to run the file
+//strings
+//Strings.RunMain();
+//inegers
+Integers.RunMain();
