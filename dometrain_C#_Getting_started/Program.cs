@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using dometrain_C__Getting_started;
+
 Console.WriteLine("Hello, World!");
 //using System;
 //[1]
@@ -104,4 +106,4 @@ Console.WriteLine($"{num1}+10 = {5+10}");*/
 
 //Console.WriteLine("hi");
 
-
+Strings.RunMain();
