@@ -84,10 +84,47 @@ Console.WriteLine($"5 / 10= {quotient}");*/
 float sum = 5.5f + 10.5f ;
 float difference = 5.5f - 10.5f ;
 float product = 5.5f * 10.5f ;
-double quotient = 5.5f / 10.5f ;
+float quotient = 5.5f / 10.5f ;
 
 // 🖨️ Printing results
-Console.WriteLine($"5.5 + 10.5 = {sum}");
-Console.WriteLine($"5.5 - 10.5 = {difference}");
-Console.WriteLine($"5.5 * 10.5 = {product}");
-Console.WriteLine($"5.5 / 10.5 = {quotient}");
+Console.WriteLine($"5.5 + 10.5 = {sum} --type--> {sum.GetType()}");
+Console.WriteLine($"5.5 - 10.5 = {difference} --type--> {difference.GetType()}");
+Console.WriteLine($"5.5 * 10.5 = {product} --type--> {product.GetType()}");
+Console.WriteLine($"5.5 / 10.5 = {quotient} --type--> {quotient.GetType()}");
+
+
+Console.WriteLine("\n=================double===================\n");
+//normally when you write 5.5 and leave it will be like this "double"
+double sum2 = 5.5f + 10.5f;  //so when you did like this so the 5.5f convert it implicitly to double
+double difference2 = 5.5 - 10.5;  // as the double has more percision than float but better to keep it without f
+double product2 = 5.5 * 10.5;
+double quotient2 = 5.5 / 10.5;
+
+// 🖨️ Printing results
+Console.WriteLine($"5.5 + 10.5 = {sum2} --type--> {sum2.GetType()}");
+Console.WriteLine($"5.5 - 10.5 = {difference2} --type--> {difference2.GetType()}");
+Console.WriteLine($"5.5 * 10.5 = {product2} --type--> {product2.GetType()}");
+Console.WriteLine($"5.5 / 10.5 = {quotient2} --type--> {quotient2.GetType()}");
+
+
+Console.WriteLine("\n=================Decimal===================\n");
+
+//so here in decimal you can not convert from double to decimal like what we did in double
+//from float to double 
+//and this because the double and decimal uses binary floating point representation
+// and the decimal uses decimal floating point reprecination which is much more precise for financial calculations
+
+// so now what !! what we can do ? dont worry you can just do the explicit conversion mean convert manually
+//but just take care that the explicit compiler make the compiler make additional checks at rutime and make little slower in performce as it will need addtional loginc
+decimal sum3 = (decimal)5.5d + (decimal)5.5f; // and as you can see here we can just one d and one f
+                                              // and no problme both of them is decimal
+// and to make it decimal and telling the complier use decimal we use m
+decimal difference3 = 5.5m - 10.5m;  
+decimal product3 = 5.5m * 10.5m;
+decimal quotient3 = 5.5m / 10.5m;
+
+// 🖨️ Printing results
+Console.WriteLine($"5.5 + 10.5 = {sum3} --type--> {sum3.GetType()}");
+Console.WriteLine($"5.5 - 10.5 = {difference3} --type--> {difference3.GetType()}");
+Console.WriteLine($"5.5 * 10.5 = {product3} --type--> {product3.GetType()}");
+Console.WriteLine($"5.5 / 10.5 = {quotient3} --type--> {quotient3.GetType()}");
