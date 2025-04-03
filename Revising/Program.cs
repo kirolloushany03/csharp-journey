@@ -73,7 +73,7 @@ Console.WriteLine($"5 / 10= {quotient}");*/
 
 //---------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------
-//floats vs double
+/*//floats vs double
 // Floating point numbers are numbers with a decimal point
 // A float in C# is 32 bits or 4 bytes
 // The range of a float is 1.5 x 10^-45 to 3.4 x 10^38 I
@@ -127,4 +127,105 @@ decimal quotient3 = 5.5m / 10.5m;
 Console.WriteLine($"5.5 + 10.5 = {sum3} --type--> {sum3.GetType()}");
 Console.WriteLine($"5.5 - 10.5 = {difference3} --type--> {difference3.GetType()}");
 Console.WriteLine($"5.5 * 10.5 = {product3} --type--> {product3.GetType()}");
-Console.WriteLine($"5.5 / 10.5 = {quotient3} --type--> {quotient3.GetType()}");
+Console.WriteLine($"5.5 / 10.5 = {quotient3} --type--> {quotient3.GetType()}");*/
+
+//---------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------
+
+//Boolean and some operators
+
+//boolean is a tru or false value
+// boolean in c# is 1 byte or 8 bits
+
+//we can decalre and assign  a  value to these varaibles 
+//bool myBool;
+
+
+//myBool = false;
+//myBool = true;
+
+//// we can also intialise (decalre and assing value)
+//bool mybool2 = true;
+
+////we can re-assign
+//mybool2 = false;
+
+
+////also we can do some logic with it 
+////using logical operators
+////begin with 'and' '&&'
+
+//Console.WriteLine("\n========= And && =========\n");
+
+//bool TrueandFalse = true && false;
+//bool TrueandTrue = true && true;
+//bool FalseandFalse = false && false;
+
+//Console.WriteLine($"True&&False = {TrueandFalse} --type--> {TrueandFalse.GetType()}");
+//Console.WriteLine($"True&&True = {TrueandTrue} --type--> {TrueandTrue.GetType()}");
+//Console.WriteLine($"False&False = {FalseandFalse} --type--> {FalseandFalse.GetType()}");
+
+////using 'or' '||'
+//Console.WriteLine("\n========= Or || =========\n");
+
+
+//bool TrueorFalse = true || false;
+//bool TrueorTrue = true || true;
+//bool FalseorFalse = false || false;
+
+//Console.WriteLine($"True&&False = {TrueorFalse} --type--> {TrueorFalse.GetType()}");
+//Console.WriteLine($"True&&True = {TrueorTrue} --type--> {TrueorTrue.GetType()}");
+//Console.WriteLine($"False&False = {FalseorFalse} --type--> {FalseorFalse.GetType()}");
+
+////usign ! not
+
+//Console.WriteLine("\n========= not ! =========\n");
+
+//bool notTrue = !true;
+//bool notFalse = !false;
+
+//Console.WriteLine($"!true = {notTrue} --type--> {notTrue.GetType()}");
+//Console.WriteLine($"!false = {notFalse} --type--> {notFalse.GetType()}");
+
+//==========================================================================
+//==========================================================================
+/*
+//datetime
+// so here we can store date and time 
+// or date only 
+// or time only
+
+//we can declare a DateTime variable
+DateTime myDateTime;
+
+// we can declare a DateOnly variable
+DateOnly myDate;
+
+// we can declare a TimeOnly variable
+TimeOnly myTime;
+
+
+myDateTime = DateTime.Now;
+myDate = new DateOnly(2024,12, 04);
+myTime = new TimeOnly(1,23,23);
+
+//also we can decalre and initialise it 
+DateTime mydatetime2 = DateTime.Now;
+DateOnly myDate2 = new DateOnly(2025,12,03);
+TimeOnly mytime2 = new TimeOnly(2,30,20);
+
+//also we can reassign varaibles
+myDateTime = DateTime.Now;
+myDate = new DateOnly(2024, 1, 23);
+myTime = new TimeOnly(1, 23, 45);
+
+//also we can combine them 
+DateTime Datetimecombination = new DateTime(
+    myDate,
+    myTime
+    );
+
+Console.WriteLine($"Date only: {myDate}");
+Console.WriteLine($"time only: {myTime}");
+Console.WriteLine($"Date time: {Datetimecombination}");*/
+
