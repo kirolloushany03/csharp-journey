@@ -233,7 +233,7 @@ Console.WriteLine($"Date time: {Datetimecombination}");*/
 //==========================================================================
 //==========================================================================
 
-//going more deeply in casting 
+/*//going more deeply in casting 
 //so there is two of them one is automatically done by c# (implicitly)
 //and the other by us(explicitly)
 
@@ -274,4 +274,108 @@ myString = "5.5";
 myDouble = double.Parse(myString);
 Console.WriteLine("restult from using parse dobule");
 Console.WriteLine($"mysring = {myString} --type--> {myString.GetType()}");
-Console.WriteLine($"mydouble = {myDouble} --type--> {myDouble.GetType()}");
+Console.WriteLine($"mydouble = {myDouble} --type--> {myDouble.GetType()}");*/
+
+
+//revice on if statemetns in c# syntax with some problems
+//Problem 1: Even or Odd Number
+
+/*using System.Runtime.CompilerServices;
+
+int x = Convert.ToInt32( Console.ReadLine());
+if (x % 2 == 0)
+    Console.WriteLine($"this even {x}");
+else
+Console.WriteLine($"this odd {x}");
+*/
+
+//Problem 2: Age Checker
+/*Console.WriteLine("write your age");
+int age = Convert.ToInt32(Console.ReadLine());
+if (age >= 18)
+    Console.WriteLine($"you are allowed to enter the roller coaster bec your age {age}");
+else
+    Console.WriteLine($"your are not allowed to enter the roller coaster bec your age {age}");
+*/
+
+
+//Problem 3: Temperature Advice
+/*using System.Text;
+
+Console.OutputEncoding = Encoding.UTF8;
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine("write your temp🔥");
+    long temp = Convert.ToInt32(Console.ReadLine());
+
+
+    if (temp > 30)
+    {
+        Console.WriteLine("It’s hot 🔥 , stay cool!");
+    }
+    else if (temp < 10)
+    {
+        Console.WriteLine("It’s cold, wear a jacket! 🧥");
+    }
+    else
+    {
+        Console.WriteLine("its nice your are good 👍👍");
+    }
+
+}*/
+
+//Problem 4: Grade Calculator
+
+
+
+/*for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine("write your grade");
+    int grade = Convert.ToInt32(Console.ReadLine());
+
+
+    if (grade >= 90 && grade <= 100)
+    {
+        Console.WriteLine("your grade A");
+    }
+    else if (grade >= 80 && grade <= 89)
+    {
+        Console.WriteLine("your grade B");
+    }
+    else if (grade >= 70 && grade <= 79)
+    {
+        Console.WriteLine("your grade C");
+    }
+    else
+    {
+        Console.WriteLine("your grade F");
+    }
+
+}*/
+
+
+//revicing on ternary operator
+
+//Console.WriteLine("input the number ");
+//int num = Convert.ToInt32(Console.ReadLine());
+
+// problem one
+
+/*string result = num >= 50
+    ? "pass"
+    : "Failed" ;
+Console.WriteLine(result);
+*/
+
+//problem 2
+/*Console.WriteLine("write your num 2");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+string result = num > num2
+    ? $"num 1 is the largest {num}"
+    : $"num 2 is the largest {num2}";
+
+Console.WriteLine(result);*/
+
+
+
