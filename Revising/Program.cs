@@ -229,3 +229,49 @@ Console.WriteLine($"Date only: {myDate}");
 Console.WriteLine($"time only: {myTime}");
 Console.WriteLine($"Date time: {Datetimecombination}");*/
 
+
+//==========================================================================
+//==========================================================================
+
+//going more deeply in casting 
+//so there is two of them one is automatically done by c# (implicitly)
+//and the other by us(explicitly)
+
+// we can "implicitly" cast between types that are compatible
+// for example, we can convert an int to a double
+int myInt = 5;
+double myDouble = myInt;
+Console.WriteLine("Implicit Cast");
+Console.WriteLine($"myInt={myInt}");
+Console.WriteLine($"myDouble={myDouble}");
+
+// we can also "explicitly" cast between types that are compatible
+// for example, we can convert a double to an int
+myDouble = 5.5;
+myInt = (int) myDouble;
+Console.WriteLine("Explicit Cast");
+Console.WriteLine($"myInt={myInt}");
+Console.WriteLine($"myDouble={myDouble}");
+
+double myDouble2 = 5.5;
+int myint = (int)myDouble2;
+Console.WriteLine($"mydouble = {myDouble2} --type--> {myDouble2.GetType()}");
+Console.WriteLine($"myint = {myint} --type--> {myint.GetType()}");
+
+//// we cannot "cast" when the types are not compatible
+//// for example, we cannot cast a string to an int
+string myString = "5";
+//myInt = (int)myString; // this will not compile will give you
+// Cannot convert type 'string' to 'int'
+
+//but we can use parse methode to convert from string to numbers 
+myint = int.Parse(myString);
+Console.WriteLine("restult from using parse");
+Console.WriteLine($"mysring = {myString} --type--> {myString.GetType()}");
+Console.WriteLine($"myint = {myint} --type--> {myint.GetType()}");
+
+myString = "5.5";
+myDouble = double.Parse(myString);
+Console.WriteLine("restult from using parse dobule");
+Console.WriteLine($"mysring = {myString} --type--> {myString.GetType()}");
+Console.WriteLine($"mydouble = {myDouble} --type--> {myDouble.GetType()}");
