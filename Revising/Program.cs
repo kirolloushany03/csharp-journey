@@ -434,23 +434,67 @@ Console.WriteLine(result);*/
     Console.WriteLine(result);
 }*/
 
-//revice on arrays buy finid the biggest one 
+/*//revice on arrays buy finid the first and second and third biggest one in array
 static void bigsec(int[] arr)
 {
-    int biggest = 0 , secbig = 0;
+    int biggest = 0, secbig = 0, thirdbiggest = 0;
 
     foreach (int i in arr)
     {
         if (i > biggest)
         {
+            thirdbiggest = secbig;
             secbig = biggest;
-            biggest = i ;
+            biggest = i;
 
         }
 
     }
-    Console.WriteLine(biggest);
-    Console.WriteLine(secbig);
+    Console.WriteLine($"this biggest num is {biggest}");
+    Console.WriteLine($"this secound biggest num is {secbig}");
+    Console.WriteLine($"this third biggest num is {thirdbiggest}");
 }
 
-bigsec([1,2,5,9,10,8,166]);
+bigsec([2, 2, 3, 1]);*/
+
+
+
+//revice on list quickly
+
+List<int> num = new List<int>();
+
+
+num.Add(0);
+num.Add(1);
+num.Add(2);
+num.Add(3);
+num.Add(2);
+num.Add(10);
+num.Add(20);
+
+Console.WriteLine($"{string.Join(",", num)} --> after adding elemets");
+
+
+num.Remove(3);
+
+Console.WriteLine($"{string.Join(",", num)} --> after removing 3");
+
+
+num.Sort();
+Console.WriteLine($"{string.Join(",", num)} --> after sorting elements");
+
+
+num.Reverse();
+Console.WriteLine($"{string.Join(",", num)} --> after reversing");
+
+
+int x = num.IndexOf(10);
+Console.WriteLine($"postion (index) of num 10 is {x}");
+
+num.Insert(2, 133333);
+
+Console.WriteLine($"{string.Join(",", num)} --> inserting 133333 in postion 3");
+
+
+//Console.WriteLine($"{string.Join(",\n", num)}");
+
