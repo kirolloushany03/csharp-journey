@@ -379,3 +379,58 @@ Console.WriteLine(result);*/
 
 
 
+//revicing on switch statements and experessions
+
+//Problem 1 - Display the name of a day based on its number (Problem #20)
+
+/*for (int i = 0; i < 6; i++)
+{
+    Console.WriteLine("write a number");
+    int num = Convert.ToInt32(Console.ReadLine());
+
+    switch (num)
+    {
+        case 1:
+            Console.WriteLine("sunday");
+            break;
+        case 2:
+            Console.WriteLine("monday");
+            break;
+        case 3:
+            Console.WriteLine("tuesday");
+            break;
+        case 4:
+            Console.WriteLine("wednesday");
+            break;
+        case 5:
+            Console.WriteLine("thursday");
+            break;
+        case 6:
+            Console.WriteLine("friday");
+            break;
+        case 7:
+            Console.WriteLine("saturday");
+            break;
+        default:
+            Console.WriteLine("weekend");
+            break;
+    }
+}
+*/
+//swith experession
+/*for (int i = 0; i < 6; i++)
+{
+    Console.WriteLine("enter the grade");
+    string grade = Console.ReadLine().Trim().ToLower();
+
+    string result = grade switch
+    {
+        "a" => "excellent",
+        "b" => "good",
+        "c" => "not bad",
+        "d" => "tryagain",
+        _ => "try again"
+    };
+    Console.WriteLine(result);
+}*/
+
