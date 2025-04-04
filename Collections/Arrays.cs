@@ -43,5 +43,28 @@
             };
 
         Console.WriteLine($"so the lengith of number4 array is {number4.Length}");
+
+    /*//revice on arrays buy finid the first and second and third biggest one in array
+        static void bigsec(int[] arr)
+        {
+            int biggest = 0, secbig = 0, thirdbiggest = 0;
+
+            foreach (int i in arr)
+            {
+                if (i > biggest)
+                {
+                    thirdbiggest = secbig;
+                    secbig = biggest;
+                    biggest = i;
+
+                }
+
+            }
+            Console.WriteLine($"this biggest num is {biggest}");
+            Console.WriteLine($"this secound biggest num is {secbig}");
+            Console.WriteLine($"this third biggest num is {thirdbiggest}");
+        }
+
+        bigsec([2, 2, 3, 1]);*/
     }
 }
