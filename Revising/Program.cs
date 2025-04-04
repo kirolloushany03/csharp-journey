@@ -461,7 +461,7 @@ bigsec([2, 2, 3, 1]);*/
 
 //revice on list quickly
 
-List<int> num = new List<int>();
+/*List<int> num = new List<int>();
 
 
 num.Add(0);
@@ -496,5 +496,81 @@ num.Insert(2, 133333);
 Console.WriteLine($"{string.Join(",", num)} --> inserting 133333 in postion 3");
 
 
-//Console.WriteLine($"{string.Join(",\n", num)}");
+//Console.WriteLine($"{string.Join(",\n", num)}");*/
+
+
+
+// revicing on dictionary
+/*
+Dictionary<string, int> wordstonumber = new();
+
+wordstonumber.Add("one", 1);
+wordstonumber.Add("two", 2);
+wordstonumber.Add("three", 3);
+
+Console.WriteLine(string.Join(",", wordstonumber));
+
+Console.WriteLine(wordstonumber["one"]);
+
+wordstonumber["one"] = 11245;
+
+Console.WriteLine(string.Join(",", wordstonumber));
+
+Console.WriteLine(wordstonumber.Count);
+
+wordstonumber.Remove("one");
+
+Console.WriteLine(string.Join(",", wordstonumber));
+
+Console.WriteLine(wordstonumber.ContainsKey("one"));
+
+bool contains2 = wordstonumber.TryGetValue
+    (
+        "two",
+        out int kk
+    );
+
+Console.WriteLine($"so this the result of conains 2 {contains2} nd this the result of the vlaue of it {kk}");
+
+
+*/
+
+
+//revice on loops in a quick Problem: Sum of Positive Numbers
+
+
+int sum = 0;
+Console.Write("enter a numer: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+while (number >= 0)
+{
+    if (number != 0)
+    {
+        sum += number;
+    }
+
+    Console.Write("enter a numer: ");
+    number = Convert.ToInt32(Console.ReadLine());
+
+}
+Console.WriteLine(sum);
+
+
+int sum = 0;
+int number;
+
+for (; ; )
+{
+    Console.Write("Enter a number (0 to stop): ");
+    number = Convert.ToInt32(Console.ReadLine());
+
+    if (number <= 0)
+        break;
+
+    sum += number;
+}
+
+Console.WriteLine("Sum: " + sum);
+
 
