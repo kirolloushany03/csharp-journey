@@ -577,7 +577,7 @@ Console.WriteLine("Sum: " + sum);*/
 
 //==========================
 //revice on for each
-using System.Net.Http.Headers;
+/*using System.Net.Http.Headers;
 
 List<int> numbers = new List<int> { 10, 25, -5, 0, 15, -2, 30 };
 
@@ -586,7 +586,7 @@ Dictionary<string, int> myDictionary = new Dictionary<string, int>
     { "koko", 3 },
     { "soso", 5 },
     { "fofo", 2 }
-};
+};*/
 
 //print all the values in list
 /*foreach (int i in numbers)
@@ -595,7 +595,7 @@ Dictionary<string, int> myDictionary = new Dictionary<string, int>
 }*/
 
 
-//print the dictionary
+/*//print the dictionary
 foreach (KeyValuePair<string, int> babies in myDictionary)
 {
     Console.WriteLine($"so this {babies.Key} and the age is {babies.Value}");
@@ -608,3 +608,32 @@ foreach (KeyValuePair<string, int> i in myDictionary)
         break;
     Console.WriteLine(i);
 }
+*/
+
+
+
+//revice on the methods one without anything
+//one with arguments
+//and last one is with return type and arguemtns
+
+void PrintwelcomeMessage()
+{
+    Console.WriteLine("welcome yala");
+}
+
+void sum(int x , int y)
+{
+    Console.WriteLine($"the sum of the {x} and {y} is {x+y}");
+}
+
+int multiply(int x , int y)
+{
+    return x * y;
+}
+
+
+PrintwelcomeMessage();
+sum(10, 15);
+
+int result = multiply(2,5) ;
+Console.WriteLine($"the result is : {result}");
