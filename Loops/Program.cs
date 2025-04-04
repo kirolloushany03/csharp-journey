@@ -153,3 +153,8 @@ Console.WriteLine("=================================");*/
     }
 
 }*/
+
+
+using Loops;
+
+ForeEach.run();
