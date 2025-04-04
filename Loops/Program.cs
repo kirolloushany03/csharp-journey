@@ -157,4 +157,4 @@ Console.WriteLine("=================================");*/
 
 using Loops;
 
-ForeEach.run();
+ForEach.run();

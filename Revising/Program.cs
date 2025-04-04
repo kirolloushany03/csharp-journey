@@ -539,7 +539,7 @@ Console.WriteLine($"so this the result of conains 2 {contains2} nd this the resu
 //revice on loops in a quick Problem: Sum of Positive Numbers
 
 
-int sum = 0;
+/*int sum = 0;
 Console.Write("enter a numer: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
@@ -554,10 +554,10 @@ while (number >= 0)
     number = Convert.ToInt32(Console.ReadLine());
 
 }
-Console.WriteLine(sum);
+Console.WriteLine(sum);*/
 
 
-int sum = 0;
+/*int sum = 0;
 int number;
 
 for (; ; )
@@ -571,6 +571,40 @@ for (; ; )
     sum += number;
 }
 
-Console.WriteLine("Sum: " + sum);
+Console.WriteLine("Sum: " + sum);*/
 
 
+
+//==========================
+//revice on for each
+using System.Net.Http.Headers;
+
+List<int> numbers = new List<int> { 10, 25, -5, 0, 15, -2, 30 };
+
+Dictionary<string, int> myDictionary = new Dictionary<string, int>
+{
+    { "koko", 3 },
+    { "soso", 5 },
+    { "fofo", 2 }
+};
+
+//print all the values in list
+/*foreach (int i in numbers)
+{
+    Console.WriteLine(i);
+}*/
+
+
+//print the dictionary
+foreach (KeyValuePair<string, int> babies in myDictionary)
+{
+    Console.WriteLine($"so this {babies.Key} and the age is {babies.Value}");
+}
+Console.WriteLine("===================");
+//usign break and continue
+foreach (KeyValuePair<string, int> i in myDictionary)
+{
+    if (i.Value == 2)
+        break;
+    Console.WriteLine(i);
+}
