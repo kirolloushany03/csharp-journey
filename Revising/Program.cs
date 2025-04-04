@@ -434,3 +434,23 @@ Console.WriteLine(result);*/
     Console.WriteLine(result);
 }*/
 
+//revice on arrays buy finid the biggest one 
+static void bigsec(int[] arr)
+{
+    int biggest = 0 , secbig = 0;
+
+    foreach (int i in arr)
+    {
+        if (i > biggest)
+        {
+            secbig = biggest;
+            biggest = i ;
+
+        }
+
+    }
+    Console.WriteLine(biggest);
+    Console.WriteLine(secbig);
+}
+
+bigsec([1,2,5,9,10,8,166]);
