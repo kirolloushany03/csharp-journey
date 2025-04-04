@@ -158,3 +158,4 @@ Console.WriteLine("=================================");*/
 using Loops;
 
 ForEach.run();
+ForAndWhileLoops.run();
