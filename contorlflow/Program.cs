@@ -141,3 +141,11 @@
 //    };
 
 //Console.WriteLine($"so the lengith of number4 array is {number4.Length}");
+
+
+//how to run resutl both files
+using contorlflow;
+
+If_StatemtsAND_TernaryOperators.Run();
+
+SwitchStatementsAndExperessions.run();
