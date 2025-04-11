@@ -616,7 +616,7 @@ foreach (KeyValuePair<string, int> i in myDictionary)
 //one with arguments
 //and last one is with return type and arguemtns
 
-void PrintwelcomeMessage()
+/*void PrintwelcomeMessage()
 {
     Console.WriteLine("welcome yala");
 }
@@ -636,4 +636,111 @@ PrintwelcomeMessage();
 sum(10, 15);
 
 int result = multiply(2,5) ;
-Console.WriteLine($"the result is : {result}");
+Console.WriteLine($"the result is : {result}");*/
+
+
+// revice on try and catch 
+
+/*int divide(int a , int b)
+{
+    return a / b; 
+}
+
+
+try
+{
+    divide(1, 0);// so if you have other lines of code after it so it will not run
+    //             // if there is an erro inhis line so it will go the catching errors
+                    //but to be sure that these lines will always run but in finally block
+    //
+    //
+}
+catch (DivideByZeroException e) when (e.Message.Contains("zero"))
+{
+    Console.WriteLine("you cant divide by zero");
+}
+catch (Exception e)
+{
+    Console.WriteLine($"the exception is");
+    Console.WriteLine(e);
+} //and the finally is will always run after the exception 
+
+finally
+{
+    Console.WriteLine("and finally finally the code will always run");
+}
+
+
+*/
+
+/* 
+╔══════════════════════╗
+║   📘 Review on OOP   ║
+╚══════════════════════╝
+*/
+
+
+
+
+//if you here just put the class before the statemets will give you an error called
+// Top-level statements must precede namespace and type declarations.
+// and this because statrted from c# version 9 it made top level statemts as 
+// you dont have to write main function before doing anythinng but any statmetns recognised
+// that it runs inside the main function there is no method come before the main functions
+
+//polished version
+// ⚠️ If you try to define a class before top-level statements,
+// you'll get an error:
+// "Top-level statements must precede namespace and type declarations."
+
+// 🧠 This is because, starting from C# 9, you can write code
+// without explicitly declaring a Main method.
+
+// 📌 All top-level statements are treated as if they are
+// inside a hidden 'Main' method.
+
+// 🚫 Therefore, type declarations like classes or namespaces
+// must come *after* these statements, because you can't define
+// a class *inside* a method in C#.
+
+
+using System.Net.Http.Headers;
+
+Ourclass ourobject = new Ourclass();
+Ourclass ourobject2 = new();
+
+
+//lets make a new instance 
+Our2ndclass result = new Our2ndclass();
+//result.ExampleMehtod();
+//int x  = result.ExampleFunction(1, 2);
+
+//so here we can ask question why here we did not create console object everytime
+//we try to use it  (and this becase we make it static 🤫🤫)
+//Console.WriteLine(x);
+
+
+//we will knwo about the refrence types in c#
+//so first of all the normal datatypes like int, float , double, dattime --> value types
+//but objects called refrence types
+
+
+Ourclass object1 = new Ourclass();
+Ourclass object2 = new Ourclass();
+Ourclass object3 = object1;
+
+
+
+//so we cna test it 
+//Console.WriteLine($"is object 1 == object 2  --> {object1 == object2}"); //this will give false 
+//Console.WriteLine($"is object 1 == object 3  --> {object1 == object3}"); // this will give true
+
+
+//collections
+
+List<int> mynumbers1 = new List<int> { 1, 2, 3 };
+List<int> mynumbers2 = new List<int> { 1, 2, 3 };
+
+//Console.WriteLine($"is the mynumbers1 == mynumbers2 --> {mynumbers1 == mynumbers2}");
+ 
+
