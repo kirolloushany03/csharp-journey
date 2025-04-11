@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebuggingAndExceptions", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_ObjectOrientedProgamming", "Basic_ObjectOrientedProgamming\Basic_ObjectOrientedProgamming.csproj", "{AF14E779-22B0-4C48-AFD5-0D526DCDAFE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolvingAlgorithms", "SolvingAlgorithms\SolvingAlgorithms.csproj", "{C4680103-D276-45A1-8117-B70B89793A9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revising", "Revising\Revising.csproj", "{1E622D3D-C4B3-41B6-BEB1-2BFAB24C1DC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{AF14E779-22B0-4C48-AFD5-0D526DCDAFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF14E779-22B0-4C48-AFD5-0D526DCDAFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF14E779-22B0-4C48-AFD5-0D526DCDAFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4680103-D276-45A1-8117-B70B89793A9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4680103-D276-45A1-8117-B70B89793A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4680103-D276-45A1-8117-B70B89793A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4680103-D276-45A1-8117-B70B89793A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E622D3D-C4B3-41B6-BEB1-2BFAB24C1DC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E622D3D-C4B3-41B6-BEB1-2BFAB24C1DC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E622D3D-C4B3-41B6-BEB1-2BFAB24C1DC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E622D3D-C4B3-41B6-BEB1-2BFAB24C1DC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

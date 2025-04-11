@@ -742,5 +742,47 @@ List<int> mynumbers1 = new List<int> { 1, 2, 3 };
 List<int> mynumbers2 = new List<int> { 1, 2, 3 };
 
 //Console.WriteLine($"is the mynumbers1 == mynumbers2 --> {mynumbers1 == mynumbers2}");
- 
 
+
+//so thats why the objects is pass by refrence and call by refernce
+//and the primitive types is called and pass by value like the int , double and these things
+
+
+
+void ChangeRefrrence(List<String> words)
+{
+    words.Add("kiro");
+    words.Add("is");
+    words.Add("best");
+
+    words = new List<string>();
+
+    words.Add("112121");
+}
+
+List<string> mywords = new List<string> { "kkiro", "kkkiro" };
+Console.WriteLine("mywords before change refrence");
+Console.WriteLine(string.Join(",", mywords));
+
+ChangeRefrrence(mywords);
+
+Console.WriteLine("mywords after change refrence");
+Console.WriteLine(string.Join(",", mywords));
+
+
+class Ourclass()
+{
+    int x = 0;
+}
+
+class Our2ndclass()
+{
+    public void ExampleMehtod()
+    {
+        Console.WriteLine("Hellow from the Example method");
+    }
+    public int ExampleFunction(int a, int b)
+    {
+        return a + b;
+    }
+}
