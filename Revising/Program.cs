@@ -704,6 +704,7 @@ finally
 // a class *inside* a method in C#.
 
 
+/*using System;
 using System.Net.Http.Headers;
 
 Ourclass ourobject = new Ourclass();
@@ -711,7 +712,7 @@ Ourclass ourobject2 = new();
 
 
 //lets make a new instance 
-Our2ndclass result = new Our2ndclass();
+Our2ndclass result = new Our2ndclass();*/
 //result.ExampleMehtod();
 //int x  = result.ExampleFunction(1, 2);
 
@@ -725,9 +726,9 @@ Our2ndclass result = new Our2ndclass();
 //but objects called refrence types
 
 
-Ourclass object1 = new Ourclass();
+/*Ourclass object1 = new Ourclass();
 Ourclass object2 = new Ourclass();
-Ourclass object3 = object1;
+Ourclass object3 = object1;*/
 
 
 
@@ -738,8 +739,8 @@ Ourclass object3 = object1;
 
 //collections
 
-List<int> mynumbers1 = new List<int> { 1, 2, 3 };
-List<int> mynumbers2 = new List<int> { 1, 2, 3 };
+/*List<int> mynumbers1 = new List<int> { 1, 2, 3 };
+List<int> mynumbers2 = new List<int> { 1, 2, 3 };*/
 
 //Console.WriteLine($"is the mynumbers1 == mynumbers2 --> {mynumbers1 == mynumbers2}");
 
@@ -747,9 +748,9 @@ List<int> mynumbers2 = new List<int> { 1, 2, 3 };
 //so thats why the objects is pass by refrence and call by refernce
 //and the primitive types is called and pass by value like the int , double and these things
 
+//==========================================================================
 
-
-void ChangeRefrrence(List<String> words)
+/*void ChangeRefrrence(List<String> words)
 {
     words.Add("kiro");
     words.Add("is");
@@ -785,4 +786,59 @@ class Our2ndclass()
     {
         return a + b;
     }
+}*/
+
+//=====================================================================================
+
+//what is the fields  --> variable decalred directly in a class
+
+/*Person2 kiro = new Person2();
+kiro._email = "soso@hotgmail.com";
+Console.WriteLine(kiro._email);*/
+
+/*Person3 name3 = new Person3();
+Console.WriteLine(name3.GetName());*/
+
+
+Person4 kirowithproperty = new Person4();
+Console.WriteLine(kirowithproperty.Name);
+Console.WriteLine(kirowithproperty.Name2);
+Console.WriteLine(kirowithproperty.Name3);
+
+Console.WriteLine("setting the name .. ");
+kirowithproperty.Mutablename = "kiro is hero";
+Console.WriteLine(kirowithproperty.Mutablename);
+class Person 
+{
+    private string _name;
+    public void Me()
+    {
+        this._name = "kiro";
+    }
 }
+
+class Person2
+{
+    private string _email = "kk@gmail.com";
+}
+
+class Person3
+{
+    private string _name = "kiro"; //(field initialized)
+
+    public string GetName() //(method)
+    {
+        return _name;
+    }
+}
+
+//what is the properties? member that provide controllerd access (flexible mechanism)
+// to read , write or compute the value of a private field and it 
+// provide protection for a class field to keep it from being changed
+// without the knowledge of the object.
+//we can deal with it likek the fields
+
+
+
+
+
