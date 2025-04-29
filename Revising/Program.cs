@@ -839,6 +839,32 @@ class Person3
 //we can deal with it likek the fields
 
 
+class Person4
+{
+    private string _name = "kiro";
 
+    // this the first variation so this variation is for some complex logic
+    public string Name
+    {
+        get
+        {
+            return _name;
+        }
+    }
+
+    //secound variation
+    public string Name2 => _name;
+
+    //third variation (auto implemented read only properting with initializer)
+    public string Name3 { get; } = "kirohero"; // this can not access _name
+                                               // but another shape for properties
+
+    //fourth variation 
+    public string Mutablename
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+}
 
 
