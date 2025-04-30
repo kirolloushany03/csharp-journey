@@ -804,6 +804,8 @@ Person4 kirowithproperty = new Person4();
 Console.WriteLine(kirowithproperty.Name);
 Console.WriteLine(kirowithproperty.Name2);
 Console.WriteLine(kirowithproperty.Name3);
+kirowithproperty.Name3 = "hellow form the new Name 3 seeting and the name now that kiro is the best";
+Console.WriteLine(kirowithproperty.Name3);
 
 Console.WriteLine("setting the name .. ");
 kirowithproperty.Mutablename = "kiro is hero";
@@ -856,7 +858,7 @@ class Person4
     public string Name2 => _name;
 
     //third variation (auto implemented read only properting with initializer)
-    public string Name3 { get; } = "kirohero"; // this can not access _name
+    public string Name3 { get; set; } = "kirohero"; // this can not access _name
                                                // but another shape for properties
 
     //fourth variation 
