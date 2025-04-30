@@ -34,7 +34,7 @@ ourCollection2.print();*/
 var t2 = new StaticConstructor();*/
 
 
-OurClassWithHiddenConstructor instance = new(123);
+/*OurClassWithHiddenConstructor instance = new(123);
 
 static string RepeatStr(int n, string s)
 {
@@ -52,9 +52,9 @@ static string RepeatStr(int n, string s)
 RepeatStr(3, "*");
 
 
-/*the implicit constructutor
+*//*the implicit constructutor
 it is the default constractor that comes with the class so we dont have to decalre one
- does not do anything*/
+ does not do anything*//*
 
 class ImpliciConstructor
 { 
@@ -172,9 +172,12 @@ class OurClassWithHiddenConstructor
                            "directly from the outside");
     }
 }
+*/
 
 
 
 
 
+using Basic_ObjectOrientedProgamming;
 
+Fields_and_properties.Run();
