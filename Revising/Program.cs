@@ -943,7 +943,7 @@ class Person4
 
 
 
-MystaticClass.MystaticMethod();
+/*MystaticClass.MystaticMethod();
 
 MyNonStaticClass.MystaticProperty = "kiro from static propety";
 MyNonStaticClass.MystaticMethod();
@@ -985,5 +985,196 @@ class MyNonStaticClass
     {
         Console.WriteLine($"the static propery value is:{MystaticProperty}");
         Console.WriteLine($"the instace property vlaue is :{MyInstanceProperty}");
+    }
+}*/
+
+
+
+//---------------------------------------------------------------------------
+// constructors --usage--> are used to initialise a class
+// so we have two kinds of constructor 
+//implicit one and this the default one even if you can't see it
+// like normale class and this one like this have default constructor
+//and here in the c# it made the default constructor that have default values for the types
+//like if you just decalred integer likek this "int age;" so to dont makek errors the default 
+//constructor have default values if you did not initilise it iti insitlises with the default value
+//so here when i made this test that i just decalred "int age;" and i print it it gave me 0
+//so thats mean that the default constructor have default values to initilse the varaible that dont have iniitilization 
+//so question why we have default constructor ???? and this to avoid errors and bugs 
+
+//?????????????????????????????????????????????????????????????????
+
+/*ImplicitConstructor test = new ImplicitConstructor();
+test.test1();
+
+ConstructorwithParameter test2 = new ConstructorwithParameter("msa2 alfol");
+
+
+class ImplicitConstructor
+{
+    int age;
+
+    public void test1()
+    {
+        Console.WriteLine($"so this the value of age that only decalred --> {age}");
+    }
+}
+
+//explicit one that you can do what ever you want you can add parameters to it 
+//you can jsut make ti to print sth any thin you can initialise it
+
+//and this the first version  about parameterless
+
+class ExplicitConstructor
+{
+    public ExplicitConstructor()
+    {
+        Console.WriteLine("exciplicit constructor here");
+    }
+}
+
+
+class ConstructorwithParameter
+{
+    public ConstructorwithParameter(string message) 
+    {
+        Console.WriteLine(message);
+    }
+}*/
+
+
+//Now Combine both the default one and the Parameterized  constructor
+
+//so here what happen 
+//first i just the default constroto goes to it so it shows that there is this so it called the Parameterized constructor
+//and then i comes backe to the constent in the default constructor 
+
+//but in the sedcound initizlation it sent to it directly to the Parameterized constructor
+//and this the output 
+/*so this the number 1 and this the message this deault number and go to the Parameterized constructor
+and this message that inthe default constructor
+so this the number 22 and this the message this go directly to the Parameterized constructor*/
+
+/*MultipleConstructors instanceTest = new ();
+MultipleConstructors instanceTest2 = new (22, "this go directly to the Parameterized constructor");
+class MultipleConstructors
+{
+    public MultipleConstructors()
+        :this(1, "this deault number and go to the Parameterized constructor") //so this one call Parameterized one
+                                          //and give to it the parameter the default one
+                                          //that we already put it like the the message
+                                          //and then it comet to the things that in the defaoutl constructor
+    {
+        Console.WriteLine("and this message that inthe default constructor");
+    }
+
+    public MultipleConstructors(int number , string message)
+    {
+        Console.WriteLine($"so this the number {number} and this the message {message}");
+
+    }
+}*/
+
+
+//so the main reson of using the construcotr is to insitalizse the calss
+
+/*ourcollectionWords words = new ourcollectionWords(); //here the list initilised
+words.Add("kiro");       //}
+words.Add("spider-man"); //} --> now all of these just adding in the list   
+words.Add("Batman");     //}
+
+words.print();  //print what in the list
+
+*/
+//collectionwords2 same as previous but this one will pass to the constrrcutor list of words
+/*ourcollectionWords2 words2 = new ourcollectionWords2(["kiro","play","spiderman","remastered edition"]);
+words2.print();*/
+
+
+//because of the construcotr is static
+//so it will print jsut only one time
+//becase it is tstaic related to the class it self not genrate instance
+/*var t1 = new staticconstructor();
+var t2 = new staticconstructor();*/
+
+
+
+/*class ourcollectionWords
+{
+    private List<string> _strings;// actully you here can initlsie the list
+                                  // but it is safest to initialise it in the constructor
+    public ourcollectionWords()
+    { 
+        _strings = new List<string>();
+    }
+
+    public void Add(string word)
+    { 
+        _strings.Add(word);
+    }
+
+    public void print()
+    {
+        foreach (var word in _strings) //we can use var but the most
+                                    //improtant thing that to use var with insitalized variable
+        {
+            Console.WriteLine(word);
+        }
+
+    }
+}
+
+class ourcollectionWords2
+{
+    private List<string> _strings;// actully you here can initlsie the list
+                                  // but it is safest to initialise it in the constructor
+    public ourcollectionWords2(List<string> words)
+    { 
+        _strings = new List<string>();
+
+        foreach (var word in words)
+        {
+            _strings.Add(word);
+        }
+    }
+
+    public void print()
+    {
+        foreach (var word in _strings) //we can use var but the most
+                                    //improtant thing that to use var with insitalized variable
+        {
+            Console.WriteLine(word);
+        }
+
+    }
+}
+
+
+
+class staticconstructor
+{
+    static staticconstructor()
+    {
+        Console.WriteLine("static constrocot from staticconstructor class");
+    }
+}*/
+
+
+OurClassWithHiddenConstructor t3 = new OurClassWithHiddenConstructor(22);
+
+
+class OurClassWithHiddenConstructor
+{
+    public OurClassWithHiddenConstructor(int value)
+        : this()
+    {
+        Console.WriteLine($"THIS THE PUBLIC CONSTRUCTOR" +
+            $"we recived {value}");
+    }
+
+    private OurClassWithHiddenConstructor() 
+    {
+        Console.WriteLine($"no one can call this the private one " + 
+            $"from outside directly!");
     }
 }
