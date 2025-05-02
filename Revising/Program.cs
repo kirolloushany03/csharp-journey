@@ -991,7 +991,10 @@ class MyNonStaticClass
 
 
 //---------------------------------------------------------------------------
-// constructors --usage--> are used to initialise a class
+
+//constructors constructors constructors
+
+/*// constructors --usage--> are used to initialise a class
 // so we have two kinds of constructor 
 //implicit one and this the default one even if you can't see it
 // like normale class and this one like this have default constructor
@@ -1077,9 +1080,9 @@ class ConstructorwithParameter
 
 //but in the sedcound initizlation it sent to it directly to the Parameterized constructor
 //and this the output 
-/*so this the number 1 and this the message this deault number and go to the Parameterized constructor
+*//*so this the number 1 and this the message this deault number and go to the Parameterized constructor
 and this message that inthe default constructor
-so this the number 22 and this the message this go directly to the Parameterized constructor*/
+so this the number 22 and this the message this go directly to the Parameterized constructor*//*
 
 
 class MultipleConstructors
@@ -1178,4 +1181,4 @@ class OurClassWithHiddenConstructor
         Console.WriteLine($"no one can call this the private one " + 
             $"from outside directly!");
     }
-}
+}*/
