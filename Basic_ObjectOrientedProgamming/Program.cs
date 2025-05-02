@@ -180,4 +180,199 @@ class OurClassWithHiddenConstructor
 
 using Basic_ObjectOrientedProgamming;
 
-Fields_and_properties.Run();
+//Fields_and_properties.Run();
+
+
+Constructor.Main_Run();
+
+
+// this also another version from constructor that have the tests and the constructor 
+//below it so we can realte to it 
+
+
+// 👷‍♂️ Constructors — Usage --> are used to initialize a class
+// 🔹 We have two kinds of constructors:
+//    1. **Implicit (default)** — created by the compiler even if you don't see it.
+//    2. **Explicit** — you write it yourself, can be parameterless or parameterized.
+//
+// 🎯 Why do we have default constructors?
+// ✅ To avoid errors and bugs from uninitialized fields.
+//    Example: if you declare "int age;" and print it, it gives 0 —
+//    that's because the default constructor gives it a default value.
+
+// --------------------------------------------------------------------------------------------
+// 🔹 Implicit Constructor — Default Values Test
+/*
+ImplicitConstructor test = new ImplicitConstructor();
+test.test1();
+*/
+class ImplicitConstructor
+{
+    int age;
+
+    public void test1()
+    {
+        Console.WriteLine($"so this is the value of 'age' that was only declared --> {age}");
+    }
+}
+
+// --------------------------------------------------------------------------------------------
+// 🔹 Explicit Constructor (Parameterless)
+/*
+ExplicitConstructor test = new ExplicitConstructor();
+*/
+class ExplicitConstructor
+{
+    public ExplicitConstructor()
+    {
+        Console.WriteLine("explicit constructor here");
+    }
+}
+
+// --------------------------------------------------------------------------------------------
+// 🔹 Constructor with Parameter
+/*
+ConstructorwithParameter test2 = new ConstructorwithParameter("msa2 alfol");
+*/
+class ConstructorwithParameter
+{
+    public ConstructorwithParameter(string message)
+    {
+        Console.WriteLine(message);
+    }
+}
+
+// --------------------------------------------------------------------------------------------
+// 🔹 Multiple Constructors (Default & Parameterized)
+/*
+MultipleConstructors instanceTest = new(); // Goes to the default constructor
+MultipleConstructors instanceTest2 = new(22, "this go directly to the Parameterized constructor");
+*/
+// 🧠 What happens here:
+// When using the default constructor:
+//    ➤ it first calls the parameterized one with default values (1, "...")
+//    ➤ then prints from the default constructor body
+//
+// When using the parameterized constructor directly:
+//    ➤ it skips the default and goes straight to the parameterized one
+class MultipleConstructors
+{
+    public MultipleConstructors()
+        : this(1, "this default number and go to the Parameterized constructor")
+    {
+        Console.WriteLine("and this message that is in the default constructor");
+    }
+
+    public MultipleConstructors(int number, string message)
+    {
+        Console.WriteLine($"so this is the number {number} and this is the message: {message}");
+    }
+}
+
+// --------------------------------------------------------------------------------------------
+// 🔹 Collection Initialization using Default Constructor
+/*
+ourcollectionWords words = new ourcollectionWords(); // here the list is initialized
+words.Add("kiro");
+words.Add("spider-man");
+words.Add("Batman");
+
+words.print();  // 🖨️ print what's in the list
+*/
+// 📝 Notes:
+// ➤ You *can* initialize the list at declaration,
+//    but it's safer and cleaner to do it in the constructor.
+class ourcollectionWords
+{
+    private List<string> _strings;
+
+    public ourcollectionWords()
+    {
+        _strings = new List<string>();
+    }
+
+    public void Add(string word)
+    {
+        _strings.Add(word);
+    }
+
+    public void print()
+    {
+        foreach (var word in _strings)
+        {
+            Console.WriteLine(word);
+        }
+    }
+}
+
+// --------------------------------------------------------------------------------------------
+// 🔹 Collection Initialization using Parameterized Constructor
+/*
+ourcollectionWords2 words2 = new ourcollectionWords2(
+    new List<string> { "kiro", "play", "spiderman", "remastered edition" });
+
+words2.print();
+*/
+// 📝 Notes:
+// ➤ Constructor receives a list and fills an internal list with it.
+class ourcollectionWords2
+{
+    private List<string> _strings;
+
+    public ourcollectionWords2(List<string> words)
+    {
+        _strings = new List<string>();
+
+        foreach (var word in words)
+        {
+            _strings.Add(word);
+        }
+    }
+
+    public void print()
+    {
+        foreach (var word in _strings)
+        {
+            Console.WriteLine(word);
+        }
+    }
+}
+
+// --------------------------------------------------------------------------------------------
+// 🔹 Static Constructor — Runs Once per Class
+/*
+var t1 = new staticconstructor();
+var t2 = new staticconstructor(); // Only one static constructor call will happen
+*/
+// 📝 Notes:
+// ➤ Static constructors are related to the class itself.
+//    So it runs only once — when the class is first accessed.
+class staticconstructor
+{
+    static staticconstructor()
+    {
+        Console.WriteLine("static constructor from staticconstructor class");
+    }
+}
+
+// --------------------------------------------------------------------------------------------
+// 🔹 Hidden (Private) Constructor Called via Public One
+/*
+OurClassWithHiddenConstructor t3 = new OurClassWithHiddenConstructor(22);
+*/
+// 📝 Notes:
+// ➤ The public constructor calls the private one internally,
+//    so no one from outside can use the private one directly.
+class OurClassWithHiddenConstructor
+{
+    public OurClassWithHiddenConstructor(int value)
+        : this()
+    {
+        Console.WriteLine($"THIS IS THE PUBLIC CONSTRUCTOR — we received: {value}");
+    }
+
+    private OurClassWithHiddenConstructor()
+    {
+        Console.WriteLine("⚠️ no one can call this — it's the private one from outside directly!");
+    }
+}
