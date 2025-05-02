@@ -1004,11 +1004,37 @@ class MyNonStaticClass
 
 //?????????????????????????????????????????????????????????????????
 
-/*ImplicitConstructor test = new ImplicitConstructor();
+ImplicitConstructor test = new ImplicitConstructor();
 test.test1();
 
 ConstructorwithParameter test2 = new ConstructorwithParameter("msa2 alfol");
 
+
+MultipleConstructors instanceTest = new();
+MultipleConstructors instanceTest2 = new(22, "this go directly to the Parameterized constructor");
+
+
+ourcollectionWords words = new ourcollectionWords(); //here the list initilised
+words.Add("kiro");       //}
+words.Add("spider-man"); //} --> now all of these just adding in the list   
+words.Add("Batman");     //}
+
+words.print();  //print what in the list
+
+
+//collectionwords2 same as previous but this one will pass to the constrrcutor list of words
+ourcollectionWords2 words2 = new ourcollectionWords2(["kiro", "play", "spiderman", "remastered edition"]);
+words2.print();
+
+
+//because of the construcotr is static
+//so it will print jsut only one time
+//becase it is tstaic related to the class it self not genrate instance
+var t1 = new staticconstructor();
+var t2 = new staticconstructor();
+
+
+OurClassWithHiddenConstructor t3 = new OurClassWithHiddenConstructor(22);
 
 class ImplicitConstructor
 {
@@ -1036,11 +1062,11 @@ class ExplicitConstructor
 
 class ConstructorwithParameter
 {
-    public ConstructorwithParameter(string message) 
+    public ConstructorwithParameter(string message)
     {
         Console.WriteLine(message);
     }
-}*/
+}
 
 
 //Now Combine both the default one and the Parameterized  constructor
@@ -1055,68 +1081,45 @@ class ConstructorwithParameter
 and this message that inthe default constructor
 so this the number 22 and this the message this go directly to the Parameterized constructor*/
 
-/*MultipleConstructors instanceTest = new ();
-MultipleConstructors instanceTest2 = new (22, "this go directly to the Parameterized constructor");
+
 class MultipleConstructors
 {
     public MultipleConstructors()
-        :this(1, "this deault number and go to the Parameterized constructor") //so this one call Parameterized one
-                                          //and give to it the parameter the default one
-                                          //that we already put it like the the message
-                                          //and then it comet to the things that in the defaoutl constructor
+        : this(1, "this deault number and go to the Parameterized constructor") //so this one call Parameterized one
+                                                                                //and give to it the parameter the default one
+                                                                                //that we already put it like the the message
+                                                                                //and then it comet to the things that in the defaoutl constructor
     {
         Console.WriteLine("and this message that inthe default constructor");
     }
 
-    public MultipleConstructors(int number , string message)
+    public MultipleConstructors(int number, string message)
     {
         Console.WriteLine($"so this the number {number} and this the message {message}");
 
     }
-}*/
-
-
-//so the main reson of using the construcotr is to insitalizse the calss
-
-/*ourcollectionWords words = new ourcollectionWords(); //here the list initilised
-words.Add("kiro");       //}
-words.Add("spider-man"); //} --> now all of these just adding in the list   
-words.Add("Batman");     //}
-
-words.print();  //print what in the list
-
-*/
-//collectionwords2 same as previous but this one will pass to the constrrcutor list of words
-/*ourcollectionWords2 words2 = new ourcollectionWords2(["kiro","play","spiderman","remastered edition"]);
-words2.print();*/
-
-
-//because of the construcotr is static
-//so it will print jsut only one time
-//becase it is tstaic related to the class it self not genrate instance
-/*var t1 = new staticconstructor();
-var t2 = new staticconstructor();*/
+}
 
 
 
-/*class ourcollectionWords
+class ourcollectionWords
 {
     private List<string> _strings;// actully you here can initlsie the list
                                   // but it is safest to initialise it in the constructor
     public ourcollectionWords()
-    { 
+    {
         _strings = new List<string>();
     }
 
     public void Add(string word)
-    { 
+    {
         _strings.Add(word);
     }
 
     public void print()
     {
         foreach (var word in _strings) //we can use var but the most
-                                    //improtant thing that to use var with insitalized variable
+                                       //improtant thing that to use var with insitalized variable
         {
             Console.WriteLine(word);
         }
@@ -1129,7 +1132,7 @@ class ourcollectionWords2
     private List<string> _strings;// actully you here can initlsie the list
                                   // but it is safest to initialise it in the constructor
     public ourcollectionWords2(List<string> words)
-    { 
+    {
         _strings = new List<string>();
 
         foreach (var word in words)
@@ -1141,7 +1144,7 @@ class ourcollectionWords2
     public void print()
     {
         foreach (var word in _strings) //we can use var but the most
-                                    //improtant thing that to use var with insitalized variable
+                                       //improtant thing that to use var with insitalized variable
         {
             Console.WriteLine(word);
         }
@@ -1157,10 +1160,8 @@ class staticconstructor
     {
         Console.WriteLine("static constrocot from staticconstructor class");
     }
-}*/
+}
 
-
-OurClassWithHiddenConstructor t3 = new OurClassWithHiddenConstructor(22);
 
 
 class OurClassWithHiddenConstructor
