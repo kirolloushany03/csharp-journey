@@ -100,3 +100,10 @@ public sealed class KiroCoolestCalaculator
         }
     }
 }
+
+//enhne version
+// is negative nubmer will be pars correctly or not ?
+//is there way that we can change the infinte loop or not?
+//while loop 
+//addin gother types of errors if found in try catch block
+//if number can not get parsed dont get back the first step we can ask the user for another valid numer without goin back to the frist one
