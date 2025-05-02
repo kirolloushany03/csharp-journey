@@ -107,3 +107,8 @@ public sealed class KiroCoolestCalaculator
 //while loop 
 //addin gother types of errors if found in try catch block
 //if number can not get parsed dont get back the first step we can ask the user for another valid numer without goin back to the frist one
+
+
+
+
+// finallyyyyyyyyyyyyyyyyyyyyy finshed this course was really amazing course i learned alot
