@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolvingAlgorithms", "Solvin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revising", "Revising\Revising.csproj", "{1E622D3D-C4B3-41B6-BEB1-2BFAB24C1DC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProgram", "DemoProgram\DemoProgram.csproj", "{F316D5BD-0978-4E40-98E2-8A1EBB309395}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{1E622D3D-C4B3-41B6-BEB1-2BFAB24C1DC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E622D3D-C4B3-41B6-BEB1-2BFAB24C1DC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E622D3D-C4B3-41B6-BEB1-2BFAB24C1DC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F316D5BD-0978-4E40-98E2-8A1EBB309395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F316D5BD-0978-4E40-98E2-8A1EBB309395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F316D5BD-0978-4E40-98E2-8A1EBB309395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F316D5BD-0978-4E40-98E2-8A1EBB309395}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
